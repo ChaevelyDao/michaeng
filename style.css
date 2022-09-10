@@ -1,38 +1,96 @@
-h1{
-    color: red;
-    text-align: center;
+*{
+    margin: 0;
+    text-decoration: none;
+    
 }
+:root{
+    --love: brown;
 
-p{
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+p {
     color: green;
     text-align: center;
 }
+.tw1{
+    color: #f9c596;
+}
+.tw2{
+    color: #fc5d9d;
+}
 
-tr{
+td{
     text-align: center;
 }
 
-#chaeng{
-    color: #e62722;
-}
-
-#nayeon{
-    color: #49c0ec;
-}
-#mina{
-    color: #71c7d4;
-}
-.kr{
-    color: pink;
-}
-
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
 
 .text-center {
     text-align: center;
   }
+
+.box{
+    background-image:url(https://64.media.tumblr.com/b905a07957103c7352ef6625a0459d6b/bf74f805bc740a08-b7/s540x810/33e1f0c029d3598f427d8fe4b14bc41ebe110d6f.gif);
+    background-size: contain;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0; 
+    margin-right: 0.5em; 
+    margin-left: 0.5em;
+  }
+
+li a:visited, p .scroll-menu{
+    color: black;
+}
+
+.head-menu{
+    position: absolute;
+    height: 34px;
+    width: 100vw;
+    background-color: pink;
+    font-size: 26px;
+}
+p.lh{
+    text-align: center;
+    color:black;
+}
+.scroll-menu{
+    margin-left: 87%;
+    height: 30px;
+    width: 13%;
+    background-color:#fc5d9d;
+    font-size: 26px;
+    border: 2px solid black;
+}
+.scroll-menu:hover{
+    color: #fc5d9d;
+    background-color: black;
+}
+.lh:hover{
+    color: hotpink;
+}
+
+#menu-list{
+    position: absolute;
+    right: 0%;
+    display: none;
+    height: fit-content;
+    width: fit-content;
+    background-color: rgb(226, 221, 223);
+    border: 3px solid #fff;
+
+}
+
+.scroll-menu:hover #menu-list{
+    display: block;
+  }
+

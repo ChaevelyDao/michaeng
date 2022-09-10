@@ -25,36 +25,34 @@ td{
     text-align: center;
 }
 
-.center {
+.img-center {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-  }
+    margin:auto;
+}
 
 .text-center {
     text-align: center;
-  }
+}
 
 .box{
     background-image:url(https://64.media.tumblr.com/b905a07957103c7352ef6625a0459d6b/bf74f805bc740a08-b7/s540x810/33e1f0c029d3598f427d8fe4b14bc41ebe110d6f.gif);
-    background-size: contain;
+    background-size: 100%;
 }
 
 ul {
     list-style-type: none;
-    padding: 0; 
+    padding: 0px; 
     margin-right: 0.5em; 
     margin-left: 0.5em;
-  }
+}
 
 li a:visited, p .scroll-menu{
     color: black;
 }
 
 .head-menu{
-    position: absolute;
-    height: 34px;
+    position: fixed;
+    height: 36px;
     width: 100vw;
     background-color: pink;
     font-size: 26px;
@@ -64,12 +62,15 @@ p.lh{
     color:black;
 }
 .scroll-menu{
-    margin-left: 87%;
-    height: 30px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 36px;
     width: 13%;
     background-color:#fc5d9d;
     font-size: 26px;
-    border: 2px solid black;
+    border: 3px solid black;
+    box-sizing: border-box;
 }
 .scroll-menu:hover{
     color: #fc5d9d;
@@ -81,13 +82,14 @@ p.lh{
 
 #menu-list{
     position: absolute;
-    right: 0%;
+    right: 0px;
+    top: 33px;
     display: none;
     height: fit-content;
-    width: fit-content;
+    width:max-content;
     background-color: rgb(226, 221, 223);
     border: 3px solid #fff;
-
+    box-sizing: border-box;
 }
 
 .scroll-menu:hover #menu-list{
